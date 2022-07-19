@@ -1,0 +1,32 @@
+{
+  "name": "rotas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js",
+    "dev" : "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosana-ctrl/rotas.git"
+  },
+  "keywords": [
+    "get",
+    "post"
+  ],
+  "author": "Rosana",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rosana-ctrl/rotas/issues"
+  },
+  "homepage": "https://github.com/rosana-ctrl/rotas#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
