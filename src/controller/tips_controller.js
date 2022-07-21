@@ -1,19 +1,22 @@
-const tipsController = (app) => {
+import Tips from "../model/tips_model.js"
+
+const tips_Controller = (app) => {
 
     app.get('/tips', (req, res) => {
+        const tip = new Tips()
+
         res.json({
-            "msg": 'dica recebida'
+            "msg": tip.pegaTip()
         })
     })
 
-    app.post('/create', (req, res) => {
-        // req.body
-        console.log(req.body)
-        res.json({
-            "body": req.body
-        })
+    app.post('/tips ', (req, res) => {
+        const body = req.body
+        const tip = new Tips()
+        tip.insereTip(body.tip)
+        res.json(tip)
 
     })
 }
 
-export default tipsController
+export default tips_Controller
